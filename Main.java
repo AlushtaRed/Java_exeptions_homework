@@ -32,7 +32,7 @@ public class Main {
     public static String enter() {
         String encoding = System.getProperty("console.encoding", "Cp866");
         Scanner scanner = new Scanner(System.in, encoding);
-        System.out.println("Введите ФИО, телефон, дату рождения и пол через пробел: ");
+        System.out.println("Введите ФИО, телефон, дату рождения (dd.MM.yyyy) и пол (m/f) через пробел: ");
         System.out.println(">>> ");
         String input = scanner.nextLine();
         return input;
