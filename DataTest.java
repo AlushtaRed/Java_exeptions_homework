@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.Arrays;
 
-/* Здесь проверяем правильность данных и если все верно, создаем строку в правтльном формате */
+/* Здесь проверяем правильность данных и если все верно, возвращаем строку в правильном формате */
 
 public class DataTest {
     public static String[] dataScan(String[] list) {
