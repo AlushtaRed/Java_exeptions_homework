@@ -66,13 +66,30 @@ public class DataTest {
          * при правильном вводе, все данные из входящего массива обнулялись, проверям
          * это здесь
          */
-        for (int i = 0; i < resultList.length; i++) {
+        // for (int i = 0; i < resultList.length; i++) {
+        //     if (resultList[i] == null) {
+
+        //         throw new RuntimeException("Введены некорректные данные");
+        //     }
+
+        // }
+        for (int i = 0; i < 3; i++) {
             if (resultList[i] == null) {
 
-                throw new RuntimeException("Введены некорректные данные");
+                throw new RuntimeException("Введены некорректные ФИО");
             }
 
         }
+        if (resultList[3] == null){
+            throw new RuntimeException("Введена некорректная дата рождения");
+        }
+        else if (resultList[4] == null){
+            throw new RuntimeException("Введен некорректный номер телефона");
+        }
+        else if (resultList[5] == null){
+            throw new RuntimeException("Введен некорректный пол");
+        }
+
 
         return resultList;
     }

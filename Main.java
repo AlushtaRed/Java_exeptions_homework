@@ -62,7 +62,8 @@ public class Main {
     static void writeToFile(String fileName, String[] list) throws IOException {
         try (FileWriter writer = new FileWriter(fileName, true)) {
 
-            writer.write(Arrays.asList(list).toString());
+            // writer.write(Arrays.asList(list).toString());
+            writer.write(String.join(" ", list));
             writer.write("\n");
         }
 
